@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06D3CC59-3D8B-4423-8EA4-2FC9F1796BB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Group_Assignment</RootNamespace>
+    <AssemblyName>Group Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\user_\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Group_Assignment.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3B9987D3CD8B9A7BFC366725C5DA72D60BCBF6F6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Group Assignment_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="roleadmin\Classes\Admin.cs" />
+    <Compile Include="roleadmin\Classes\ChefSales.cs" />
+    <Compile Include="roleadmin\Classes\Customer.cs" />
+    <Compile Include="roleadmin\Classes\Order.cs" />
+    <Compile Include="roleadmin\Classes\Users.cs" />
+    <Compile Include="roleadmin\Forms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\adminprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\adminprofile.Designer.cs">
+      <DependentUpon>adminprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\ChefReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\ChefReport.Designer.cs">
+      <DependentUpon>ChefReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\CustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\CustomerReport.Designer.cs">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\DeleteConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\DeleteConfirmation.Designer.cs">
+      <DependentUpon>DeleteConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formChefReportAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formChefReportAdmin.Designer.cs">
+      <DependentUpon>formChefReportAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formCustomerReportAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formCustomerReportAdmin.Designer.cs">
+      <DependentUpon>formCustomerReportAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formDashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formDashboardAdmin.Designer.cs">
+      <DependentUpon>formDashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formUsersAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\formUsersAdmin.Designer.cs">
+      <DependentUpon>formUsersAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\MoneyManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\MoneyManagement.Designer.cs">
+      <DependentUpon>MoneyManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\Forms\UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roleadmin\Forms\UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roleadmin\system\DirectoryServices.cs" />
+    <Compile Include="RoleChef\ChefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleChef\ChefForm.Designer.cs">
+      <DependentUpon>ChefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseHelper.cs" />
+    <Compile Include="RoleChef\formmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleChef\formmenu.Designer.cs">
+      <DependentUpon>formmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleChef\formorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleChef\formorder.Designer.cs">
+      <DependentUpon>formorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionClass\ButtonStyle.cs" />
+    <Compile Include="LoginPage\ChooseProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage\ChooseProfileForm.Designer.cs">
+      <DependentUpon>ChooseProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage\CredentialValidation.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="LoginPage\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage\MainLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage\MainLoginForm.Designer.cs">
+      <DependentUpon>MainLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage\LoginQuery.cs" />
+    <Compile Include="LoginPage\SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage\SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleChef\formprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleChef\formprofile.Designer.cs">
+      <DependentUpon>formprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuiltInTools\TitleBarUtilities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuiltInTools\TitleBarUtilities.Designer.cs">
+      <DependentUpon>TitleBarUtilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\EWalletTopUp.cs" />
+    <Compile Include="RoleCustomer\FeedbackClasses.cs" />
+    <Compile Include="RoleCustomer\SubForm\GiveFeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\GiveFeedbackForm.Designer.cs">
+      <DependentUpon>GiveFeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\HistoryOrderBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\HistoryOrderBlock.Designer.cs">
+      <DependentUpon>HistoryOrderBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\MenuItemCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\MenuItemCard.Designer.cs">
+      <DependentUpon>MenuItemCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\Menus.cs" />
+    <Compile Include="RoleCustomer\OrderClasses.cs" />
+    <Compile Include="RoleCustomer\OrderItemBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\OrderItemBlock.Designer.cs">
+      <DependentUpon>OrderItemBlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\RefundRequest.cs" />
+    <Compile Include="RoleCustomer\MainForm\SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\OnRefundRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\OnRefundRequestForm.Designer.cs">
+      <DependentUpon>OnRefundRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\RefundRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\RefundRequestForm.Designer.cs">
+      <DependentUpon>RefundRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\TopUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\TopUpForm.Designer.cs">
+      <DependentUpon>TopUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\ViewItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\SubForm\ViewItem.Designer.cs">
+      <DependentUpon>ViewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\CloseOtherForms.cs" />
+    <Compile Include="RoleManager\Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\FeedbackRespondConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\FeedbackRespondConfirm.Designer.cs">
+      <DependentUpon>FeedbackRespondConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\FeedbackResponse.cs" />
+    <Compile Include="RoleManager\ManagerSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\ManagerSettingForm.Designer.cs">
+      <DependentUpon>ManagerSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\ManagerIDaccept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\ManagerIDaccept.Designer.cs">
+      <DependentUpon>ManagerIDaccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\ManagerIDdeny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\ManagerIDdeny.Designer.cs">
+      <DependentUpon>ManagerIDdeny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\ManagerStatistics.cs" />
+    <Compile Include="RoleManager\ManagerStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\ManagerStats.Designer.cs">
+      <DependentUpon>ManagerStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\Refund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\Refund.Designer.cs">
+      <DependentUpon>Refund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager\TopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleManager\TopUp.Designer.cs">
+      <DependentUpon>TopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\LogoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\LogoutForm.Designer.cs">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuiltInTools\Gradient_Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleCustomer\MainForm\YourOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleCustomer\MainForm\YourOrderForm.Designer.cs">
+      <DependentUpon>YourOrderForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="roleadmin\Forms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\adminprofile.resx">
+      <DependentUpon>adminprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\ChefReport.resx">
+      <DependentUpon>ChefReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\CustomerReport.resx">
+      <DependentUpon>CustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\DeleteConfirmation.resx">
+      <DependentUpon>DeleteConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\formChefReportAdmin.resx">
+      <DependentUpon>formChefReportAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\formCustomerReportAdmin.resx">
+      <DependentUpon>formCustomerReportAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\formDashboardAdmin.resx">
+      <DependentUpon>formDashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\formUsersAdmin.resx">
+      <DependentUpon>formUsersAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\MoneyManagement.resx">
+      <DependentUpon>MoneyManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roleadmin\Forms\UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleChef\ChefForm.resx">
+      <DependentUpon>ChefForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleChef\formmenu.resx">
+      <DependentUpon>formmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleChef\formorder.resx">
+      <DependentUpon>formorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage\ChooseProfileForm.resx">
+      <DependentUpon>ChooseProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage\MainLoginForm.resx">
+      <DependentUpon>MainLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage\SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleChef\formprofile.resx">
+      <DependentUpon>formprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\MainForm\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuiltInTools\TitleBarUtilities.resx">
+      <DependentUpon>TitleBarUtilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\SubForm\GiveFeedbackForm.resx">
+      <DependentUpon>GiveFeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\MainForm\HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\HistoryOrderBlock.resx">
+      <DependentUpon>HistoryOrderBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\MainForm\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\MenuItemCard.resx">
+      <DependentUpon>MenuItemCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\OrderItemBlock.resx">
+      <DependentUpon>OrderItemBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\MainForm\SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\SubForm\OnRefundRequestForm.resx">
+      <DependentUpon>OnRefundRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\SubForm\RefundRequestForm.resx">
+      <DependentUpon>RefundRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\SubForm\TopUpForm.resx">
+      <DependentUpon>TopUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleCustomer\SubForm\ViewItem.resx">
+      <DependentUpon>ViewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\FeedbackRespondConfirm.resx">
+      <DependentUpon>FeedbackRespondConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\ManagerSettingForm.resx">
+      <DependentUpon>ManagerSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\ManagerIDaccept.resx">
+      <DependentUpon>ManagerIDaccept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\ManagerIDdeny.resx">
+      <DependentUpon>ManagerIDdeny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\ManagerStats.resx">
+      <DependentUpon>ManagerStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\Refund.resx">
+      <DependentUpon>Refund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleManager\TopUp.resx">
+      <DependentUpon>TopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\LogoutForm.resx">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RoleCustomer\MainForm\YourOrderForm.resx">
+      <DependentUpon>YourOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Group Assignment_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\img1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img10.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img11.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img12.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img13.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img14.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img15.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img16.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img7.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img8.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\img9.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
