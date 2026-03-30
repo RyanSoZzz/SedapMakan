@@ -69,7 +69,7 @@ The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 - Language: C#
 - Framework: Windows Forms / .NET Framework 4.7.2
 - Database: SQL Server
-- Database Access: ADO.NET / System.Data.SqlClient
+- Database Access: ADO.NET (System.Data.SqlClient)
 - IDE: Visual Studio
 
 ---
