@@ -10,6 +10,8 @@ I am Ryan, responsible for developing the login system and designing the layout 
 
 The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 
+---
+
 ## Features
 
 ### Customer
@@ -52,6 +54,8 @@ The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 - Manage money-related data
 - Access profile/settings
 
+---
+
 ## Key Strengths
 - Multirole Architecture
 - Database Integration
@@ -59,12 +63,16 @@ The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 - End-to-end Workflow Coverage
 - Modular Code Organization
 
+---
+
 ## Tech Stack
 - Language: C#
 - Framework: Windows Forms / .NET Framework 4.7.2
 - Database: SQL Server
 - Database Access: ADO.NET / System.Data.SqlClient
 - IDE: Visual Studio
+
+---
 
 ## Database Setup
 - Initialize SQL Server Management Studio
