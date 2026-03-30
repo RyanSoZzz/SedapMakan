@@ -10,13 +10,6 @@ I am Ryan, responsible for developing the login system and designing the layout 
 
 The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 
-## Key Strengths
-- Multirole Architecture
-- Database Integration
-- Role-based Access Control
-- End-to-end Workflow Coverage
-- Modular Code Organization
-
 ## Features
 
 ### Customer
@@ -58,6 +51,13 @@ The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 - View customer reports
 - Manage money-related data
 - Access profile/settings
+
+## Key Strengths
+- Multirole Architecture
+- Database Integration
+- Role-based Access Control
+- End-to-end Workflow Coverage
+- Modular Code Organization
 
 ## Tech Stack
 - Language: C#
