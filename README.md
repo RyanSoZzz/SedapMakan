@@ -52,19 +52,19 @@ The following is the demo video of the system: https://youtu.be/JiAK2fLBiXQ
 - Manage money-related data
 - Access profile/settings
 
-### Tech Stack
+## Tech Stack
 - Language: C#
 - Framework: Windows Forms / .NET Framework 4.7.2
 - Database: SQL Server
 - Database Access: ADO.NET / System.Data.SqlClient
 - IDE: Visual Studio
 
-### Database Setup
+## Database Setup
 - Initialize SQL Server Management Studio
 - Open file named "database-setup.sql" and execute it
 - Update the connection string in DatabaseHelper.cs to match your SQL Server instance
 - Open the solution in Visual Studio and run the app
 
-### Disclaimer
+## Disclaimer
 - The current database connection is machine-specific and may need to be changed before running on another computer.
 - This project is used for learning, demonstration, and portfolio purposes **ONLY**.
